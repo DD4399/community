@@ -29,7 +29,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -60,6 +60,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -77,6 +83,23 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.2.4</version>
+                <configuration>
+                    <url>jdbc:mysql://127.0.0.1:3306/community</url>
+                    <user>root</user>
+                    <password>zx123456zx</password>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
