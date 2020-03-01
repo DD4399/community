@@ -54,10 +54,12 @@ public class AuthorizeController {
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            user.setAvatarUrl(githubUser.getAvatar_url());
             userMapper.insert(user);
             response.addCookie(new Cookie("token", token));
 
-//            request.getSession().setAttribute("user", githubUser);
+//            request.getSession().setAttribute("user", githubUser); 点击登录后得到user对象放进session里
+            // 到前端页面判断session是否存在，存在即显示
             return "redirect:/";
         } else {
             //登录失败

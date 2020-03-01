@@ -17,7 +17,7 @@
                 <span class="sr-only">社区</span>
 
             </button>
-            <a class="navbar-brand" href="#">社区</a>
+            <a class="navbar-brand" href="/">社区</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -54,20 +54,21 @@
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>发起</h2>
             <hr>
-            <form action="">
+            <form action="/publish" method="post">
                 <div class="form-group">
                     <label for="title">问题标题</label>
                     <input type="text" class="form-control" id="title" name = "title" placeholder="问题标题">
                 </div>
                 <div class="form-group">
-                    <label for="title">问题补充</label>
+                    <label for="description">问题补充</label>
                     <textarea name="description" id="description" class="form-control" cols="30" rows="10" placeholder="问题补充"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="title">添加标签：</label>
+                    <label for="tag">添加标签：</label>
                     <textarea name="tag" id="tag" class="form-control" cols="30" row="10" placeholder="标签以，隔开"></textarea>
                 </div>
 
+                <div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12" th:text="${error}" th:if="${error != null}"></div>
                 <button type="submit" class="btn btn-success btn-publish">发布</button>
 
             </form>
@@ -82,7 +83,6 @@
             暂无 <br>
         </div>
     </div>
-
 </div>
 
 </body>
