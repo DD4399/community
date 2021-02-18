@@ -1,0 +1,162 @@
+::<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/coolwanglu/pdf2htmlex) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta name="generator" content="pdf2htmlEX"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<style type="text/css">
+/*! 
+ * Base CSS for pdf2htmlEX
+ * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> 
+ * https://github.com/coolwanglu/pdf2htmlEX/blob/master/share/LICENSE
+ */#sidebar{position:absolute;top:0;left:0;bottom:0;width:250px;padding:0;margin:0;overflow:auto}#page-container{position:absolute;top:0;left:0;margin:0;padding:0;border:0}@media screen{#sidebar.opened+#page-container{left:250px}#page-container{bottom:0;right:0;overflow:auto}.loading-indicator{display:none}.loading-indicator.active{display:block;position:absolute;width:64px;height:64px;top:50%;left:50%;margin-top:-32px;margin-left:-32px}.loading-indicator img{position:absolute;top:0;left:0;bottom:0;right:0}}@media print{@page{margin:0}html{margin:0}body{margin:0;-webkit-print-color-adjust:exact}#sidebar{display:none}#page-container{width:auto;height:auto;overflow:visible;background-color:transparent}.d{display:none}}.pf{position:relative;background-color:white;overflow:hidden;margin:0;border:0}.pc{position:absolute;border:0;padding:0;margin:0;top:0;left:0;width:100%;height:100%;overflow:hidden;display:block;transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0}.pc.opened{display:block}.bf{position:absolute;border:0;margin:0;top:0;bottom:0;width:100%;height:100%;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}.bi{position:absolute;border:0;margin:0;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}@media print{.pf{margin:0;box-shadow:none;page-break-after:always;page-break-inside:avoid}@-moz-document url-prefix(){.pf{overflow:visible;border:1px solid #fff}.pc{overflow:visible}}}.c{position:absolute;border:0;padding:0;margin:0;overflow:hidden;display:block}.t{position:absolute;white-space:pre;font-size:1px;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%;unicode-bidi:bidi-override;-moz-font-feature-settings:"liga" 0}.t:after{content:''}.t:before{content:'';display:inline-block}.t span{position:relative;unicode-bidi:bidi-override}._{display:inline-block;color:transparent;z-index:-1}::selection{background:rgba(127,255,255,0.4)}::-moz-selection{background:rgba(127,255,255,0.4)}.pi{display:none}.d{position:absolute;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%}.it{border:0;background-color:rgba(255,255,255,0.0)}.ir:hover{cursor:pointer}</style>
+<style type="text/css">
+/*! 
+ * Fancy styles for pdf2htmlEX
+ * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> 
+ * https://github.com/coolwanglu/pdf2htmlEX/blob/master/share/LICENSE
+ */@keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@keyframes swing{0{transform:rotate(0)}10%{transform:rotate(0)}90%{transform:rotate(720deg)}100%{transform:rotate(720deg)}}@-webkit-keyframes swing{0{-webkit-transform:rotate(0)}10%{-webkit-transform:rotate(0)}90%{-webkit-transform:rotate(720deg)}100%{-webkit-transform:rotate(720deg)}}@media screen{#sidebar{background-color:#2f3236;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMNCA0Wk00IDBMMCA0WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+")}#outline{font-family:Georgia,Times,"Times New Roman",serif;font-size:13px;margin:2em 1em}#outline ul{padding:0}#outline li{list-style-type:none;margin:1em 0}#outline li>ul{margin-left:1em}#outline a,#outline a:visited,#outline a:hover,#outline a:active{line-height:1.2;color:#e8e8e8;text-overflow:ellipsis;white-space:nowrap;text-decoration:none;display:block;overflow:hidden;outline:0}#outline a:hover{color:#0cf}#page-container{background-color:#9e9e9e;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");-webkit-transition:left 500ms;transition:left 500ms}.pf{margin:13px auto;box-shadow:1px 1px 3px 1px #333;border-collapse:separate}.pc.opened{-webkit-animation:fadein 100ms;animation:fadein 100ms}.loading-indicator.active{-webkit-animation:swing 1.5s ease-in-out .01s infinite alternate none;animation:swing 1.5s ease-in-out .01s infinite alternate none}.checked{background:no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goQDSYgDiGofgAAAslJREFUOMvtlM9LFGEYx7/vvOPM6ywuuyPFihWFBUsdNnA6KLIh+QPx4KWExULdHQ/9A9EfUodYmATDYg/iRewQzklFWxcEBcGgEplDkDtI6sw4PzrIbrOuedBb9MALD7zv+3m+z4/3Bf7bZS2bzQIAcrmcMDExcTeXy10DAFVVAQDksgFUVZ1ljD3yfd+0LOuFpmnvVVW9GHhkZAQcxwkNDQ2FSCQyRMgJxnVdy7KstKZpn7nwha6urqqfTqfPBAJAuVymlNLXoigOhfd5nmeiKL5TVTV+lmIKwAOA7u5u6Lped2BsbOwjY6yf4zgQQkAIAcedaPR9H67r3uYBQFEUFItFtLe332lpaVkUBOHK3t5eRtf1DwAwODiIubk5DA8PM8bYW1EU+wEgCIJqsCAIQAiB7/u253k2BQDDMJBKpa4mEon5eDx+UxAESJL0uK2t7XosFlvSdf0QAEmlUnlRFJ9Waho2Qghc1/U9z3uWz+eX+Wr+lL6SZfleEAQIggA8z6OpqSknimIvYyybSCReMsZ6TislhCAIAti2Dc/zejVNWwCAavN8339j27YbTg0AGGM3WltbP4WhlRWq6Q/btrs1TVsYHx+vNgqKoqBUKn2NRqPFxsbGJzzP05puUlpt0ukyOI6z7zjOwNTU1OLo6CgmJyf/gA3DgKIoWF1d/cIY24/FYgOU0pp0z/Ityzo8Pj5OTk9PbwHA+vp6zWghDC+VSiuRSOQgGo32UErJ38CO42wdHR09LBQK3zKZDDY2NupmFmF4R0cHVlZWlmRZ/iVJUn9FeWWcCCE4ODjYtG27Z2Zm5juAOmgdGAB2d3cBADs7O8uSJN2SZfl+WKlpmpumaT6Yn58vn/fs6XmbhmHMNjc3tzDGFI7jYJrm5vb29sDa2trPC/9aiqJUy5pOp4f6+vqeJ5PJBAB0dnZe/t8NBajx/z37Df5OGX8d13xzAAAAAElFTkSuQmCC)}}</style>
+<style type="text/css">
+.ff0{font-family:sans-serif;visibility:hidden;}
+@font-face{font-family:ff1;src:url(f1.woff)format("woff");}.ff1{font-family:ff1;line-height:0.991211;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff2;src:url(f2.woff)format("woff");}.ff2{font-family:ff2;line-height:1.098660;font-style:normal;font-weight:normal;visibility:visible;}
+.m0{transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);-ms-transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);-webkit-transform:matrix(0.250000,0.000000,0.000000,0.250000,0,0);}
+.v0{vertical-align:0.000000px;}
+.ls0{letter-spacing:0.000000px;}
+.sc_{text-shadow:none;}
+.sc0{text-shadow:-0.015em 0 transparent,0 0.015em transparent,0.015em 0 transparent,0 -0.015em  transparent;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.sc_{-webkit-text-stroke:0px transparent;}
+.sc0{-webkit-text-stroke:0.015em transparent;text-shadow:none;}
+}
+.ws0{word-spacing:0.000000px;}
+._1{width:1.210500px;}
+._0{width:2.259000px;}
+._3{width:3.310500px;}
+._4{width:1127.795500px;}
+._2{width:1253.612500px;}
+.fc0{color:rgb(0,0,0);}
+.fs1{font-size:40.000000px;}
+.fs0{font-size:48.000000px;}
+.fs2{font-size:64.000000px;}
+.y0{bottom:0.000000px;}
+.y1{bottom:47.000000px;}
+.y1a{bottom:209.000000px;}
+.y19{bottom:226.000000px;}
+.y18{bottom:243.000000px;}
+.y17{bottom:265.000000px;}
+.y16{bottom:288.000000px;}
+.y15{bottom:305.000000px;}
+.y14{bottom:322.000000px;}
+.y13{bottom:339.000000px;}
+.y12{bottom:356.000000px;}
+.y11{bottom:373.000000px;}
+.y10{bottom:390.000000px;}
+.yf{bottom:407.000000px;}
+.ye{bottom:424.000000px;}
+.yd{bottom:441.000000px;}
+.yc{bottom:463.000000px;}
+.yb{bottom:486.000000px;}
+.ya{bottom:503.000000px;}
+.y9{bottom:520.000000px;}
+.y8{bottom:537.000000px;}
+.y7{bottom:554.000000px;}
+.y6{bottom:576.000000px;}
+.y5{bottom:599.000000px;}
+.y4{bottom:616.000000px;}
+.y3{bottom:633.000000px;}
+.y2{bottom:655.000000px;}
+.y1e{bottom:688.000000px;}
+.y1d{bottom:701.000000px;}
+.y1c{bottom:714.000000px;}
+.y1b{bottom:733.000000px;}
+.h3{height:33.769531px;}
+.h2{height:40.523438px;}
+.h4{height:54.031250px;}
+.h1{height:748.000000px;}
+.h0{height:842.000000px;}
+.w0{width:595.000000px;}
+.x0{left:0.000000px;}
+.x1{left:49.000000px;}
+.x4{left:63.000000px;}
+.x2{left:414.000000px;}
+.x3{left:525.000000px;}
+@media print{
+.v0{vertical-align:0.000000pt;}
+.ls0{letter-spacing:0.000000pt;}
+.ws0{word-spacing:0.000000pt;}
+._1{width:1.614000pt;}
+._0{width:3.012000pt;}
+._3{width:4.414000pt;}
+._4{width:1503.727333pt;}
+._2{width:1671.483333pt;}
+.fs1{font-size:53.333333pt;}
+.fs0{font-size:64.000000pt;}
+.fs2{font-size:85.333333pt;}
+.y0{bottom:0.000000pt;}
+.y1{bottom:62.666667pt;}
+.y1a{bottom:278.666667pt;}
+.y19{bottom:301.333333pt;}
+.y18{bottom:324.000000pt;}
+.y17{bottom:353.333333pt;}
+.y16{bottom:384.000000pt;}
+.y15{bottom:406.666667pt;}
+.y14{bottom:429.333333pt;}
+.y13{bottom:452.000000pt;}
+.y12{bottom:474.666667pt;}
+.y11{bottom:497.333333pt;}
+.y10{bottom:520.000000pt;}
+.yf{bottom:542.666667pt;}
+.ye{bottom:565.333333pt;}
+.yd{bottom:588.000000pt;}
+.yc{bottom:617.333333pt;}
+.yb{bottom:648.000000pt;}
+.ya{bottom:670.666667pt;}
+.y9{bottom:693.333333pt;}
+.y8{bottom:716.000000pt;}
+.y7{bottom:738.666667pt;}
+.y6{bottom:768.000000pt;}
+.y5{bottom:798.666667pt;}
+.y4{bottom:821.333333pt;}
+.y3{bottom:844.000000pt;}
+.y2{bottom:873.333333pt;}
+.y1e{bottom:917.333333pt;}
+.y1d{bottom:934.666667pt;}
+.y1c{bottom:952.000000pt;}
+.y1b{bottom:977.333333pt;}
+.h3{height:45.026042pt;}
+.h2{height:54.031250pt;}
+.h4{height:72.041667pt;}
+.h1{height:997.333333pt;}
+.h0{height:1122.666667pt;}
+.w0{width:793.333333pt;}
+.x0{left:0.000000pt;}
+.x1{left:65.333333pt;}
+.x4{left:84.000000pt;}
+.x2{left:552.000000pt;}
+.x3{left:700.000000pt;}
+}
+</style>
+<script src="compatibility.min.js"></script>
+<script src="pdf2htmlEX.min.js"></script>
+<script>
+try{
+pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
+}catch(e){}
+</script>
+<title></title>
+</head>
+<body>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w0 h0" alt="" src="bg1.png"/><div class="c x0 y1 w0 h1"><div class="t m0 x1 h2 y2 ff1 fs0 fc0 sc0 ls0 ws0">教<span class="_ _0"></span>育<span class="_ _0"></span>经<span class="_ _0"></span>历</div><div class="t m0 x1 h3 y3 ff1 fs1 fc0 sc0 ls0 ws0">武<span class="_ _0"></span>汉<span class="_ _0"></span>工<span class="_ _0"></span>程<span class="_ _0"></span>大<span class="_ _0"></span>学</div><div class="t m0 x1 h3 y4 ff2 fs1 fc0 sc0 ls0 ws0">软<span class="_ _0"></span>件<span class="_ _0"></span>工<span class="_ _0"></span>程<span class="_ _0"></span><span class="_ _0"></span>本<span class="_ _0"></span>科<span class="_ _0"></span><span class="_ _0"></span>计<span class="_ _1"></span>算<span class="_ _1"></span>机<span class="_ _0"></span>科<span class="_ _0"></span>学<span class="_ _0"></span>与<span class="_ _0"></span>工<span class="_ _0"></span>程<span class="_ _0"></span>学<span class="_ _0"></span>院</div><div class="t m0 x2 h3 y3 ff2 fs1 fc0 sc0 ls0 ws0">2<span class="_ _1"></span>0<span class="_ _0"></span>1<span class="_ _0"></span>7<span class="_ _0"></span>年<span class="_ _0"></span>0<span class="_ _1"></span>9<span class="_ _0"></span>月<span class="_ _0"></span><span class="_ _0"></span>-<span class="_ _0"></span><span class="_ _1"></span>2<span class="_ _0"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>1<span class="_ _1"></span>年<span class="_ _0"></span>0<span class="_ _0"></span>6<span class="_ _0"></span>月</div><div class="t m0 x3 h3 y4 ff2 fs1 fc0 sc0 ls0 ws0">武<span class="_ _1"></span>汉</div><div class="t m0 x4 h3 y5 ff2 fs1 fc0 sc0 ls0 ws0">相<span class="_ _1"></span>关<span class="_ _0"></span>课<span class="_ _0"></span>程<span class="_ _0"></span>：<span class="_ _0"></span>数<span class="_ _0"></span>据<span class="_ _0"></span>结<span class="_ _0"></span>构<span class="_ _0"></span>、<span class="_ _0"></span>计<span class="_ _0"></span>算<span class="_ _0"></span>机<span class="_ _0"></span>网<span class="_ _0"></span>络<span class="_ _0"></span>、<span class="_ _0"></span>算<span class="_ _0"></span>法<span class="_ _1"></span>分<span class="_ _0"></span>析<span class="_ _0"></span>与<span class="_ _0"></span>设<span class="_ _0"></span>计<span class="_ _0"></span>、<span class="_ _0"></span>J<span class="_ _1"></span>a<span class="_ _0"></span>v<span class="_ _1"></span>a<span class="_ _0"></span>程<span class="_ _0"></span>序<span class="_ _0"></span>设<span class="_ _0"></span>计<span class="_ _0"></span>等</div><div class="t m0 x1 h2 y6 ff1 fs0 fc0 sc0 ls0 ws0">专<span class="_ _0"></span>业<span class="_ _0"></span>技<span class="_ _0"></span>能</div><div class="t m0 x4 h3 y7 ff2 fs1 fc0 sc0 ls0 ws0">熟<span class="_ _1"></span>悉<span class="_ _0"></span>J<span class="_ _0"></span>a<span class="_ _1"></span>v<span class="_ _1"></span>a<span class="_ _0"></span>语<span class="_ _0"></span>法<span class="_ _0"></span>，<span class="_ _0"></span>多<span class="_ _0"></span>线<span class="_ _0"></span>程<span class="_ _0"></span>，<span class="_ _0"></span>集<span class="_ _0"></span>合<span class="_ _0"></span>等<span class="_ _1"></span>基<span class="_ _0"></span>础<span class="_ _0"></span>框<span class="_ _0"></span>架<span class="_ _0"></span>，<span class="_ _0"></span>了<span class="_ _0"></span>解<span class="_ _0"></span>J<span class="_ _0"></span>V<span class="_ _0"></span>M</div><div class="t m0 x4 h3 y8 ff2 fs1 fc0 sc0 ls0 ws0">熟<span class="_ _1"></span>练<span class="_ _0"></span>使<span class="_ _0"></span>用<span class="_ _0"></span>S<span class="_ _0"></span>p<span class="_ _0"></span>r<span class="_ _0"></span>i<span class="_ _1"></span>n<span class="_ _0"></span>g<span class="_ _0"></span><span class="_ _0"></span>B<span class="_ _1"></span>o<span class="_ _0"></span>o<span class="_ _0"></span>t<span class="_ _0"></span>，<span class="_ _0"></span>M<span class="_ _1"></span>y<span class="_ _0"></span>b<span class="_ _1"></span>a<span class="_ _0"></span>t<span class="_ _0"></span>i<span class="_ _0"></span>s<span class="_ _1"></span>等<span class="_ _0"></span>开<span class="_ _0"></span>源<span class="_ _0"></span>框<span class="_ _0"></span>架<span class="_ _0"></span>进<span class="_ _0"></span>行<span class="_ _0"></span>微<span class="_ _0"></span>服<span class="_ _0"></span>务<span class="_ _0"></span>项<span class="_ _0"></span>目<span class="_ _0"></span>开<span class="_ _0"></span>发</div><div class="t m0 x4 h3 y9 ff2 fs1 fc0 sc0 ls0 ws0">熟<span class="_ _1"></span>练<span class="_ _0"></span>使<span class="_ _0"></span>用<span class="_ _0"></span>M<span class="_ _0"></span>y<span class="_ _0"></span>S<span class="_ _0"></span>Q<span class="_ _0"></span>L<span class="_ _1"></span>数<span class="_ _0"></span>据<span class="_ _0"></span>库<span class="_ _0"></span>，<span class="_ _0"></span>了<span class="_ _0"></span>解<span class="_ _0"></span>S<span class="_ _0"></span>Q<span class="_ _0"></span>L<span class="_ _1"></span>查<span class="_ _0"></span>询<span class="_ _0"></span>优<span class="_ _0"></span>化<span class="_ _0"></span>，<span class="_ _0"></span>了<span class="_ _0"></span>解<span class="_ _0"></span>R<span class="_ _1"></span>e<span class="_ _1"></span>d<span class="_ _0"></span>i<span class="_ _0"></span>s<span class="_ _0"></span>等<span class="_ _0"></span>N<span class="_ _1"></span>o<span class="_ _0"></span>S<span class="_ _0"></span>Q<span class="_ _0"></span>L<span class="_ _0"></span>技<span class="_ _0"></span>术</div><div class="t m0 x4 h3 ya ff2 fs1 fc0 sc0 ls0 ws0">了<span class="_ _1"></span>解<span class="_ _0"></span>S<span class="_ _0"></span>p<span class="_ _0"></span>r<span class="_ _0"></span>i<span class="_ _1"></span>n<span class="_ _0"></span>g<span class="_ _0"></span><span class="_ _0"></span>C<span class="_ _1"></span>l<span class="_ _0"></span>o<span class="_ _0"></span>u<span class="_ _0"></span>d<span class="_ _0"></span>框<span class="_ _1"></span>架<span class="_ _0"></span>，<span class="_ _0"></span>使<span class="_ _0"></span>用<span class="_ _0"></span>过<span class="_ _0"></span>E<span class="_ _0"></span>u<span class="_ _0"></span>r<span class="_ _1"></span>e<span class="_ _0"></span>k<span class="_ _1"></span>a<span class="_ _0"></span>，<span class="_ _0"></span>F<span class="_ _0"></span>e<span class="_ _0"></span>i<span class="_ _1"></span>g<span class="_ _0"></span>n<span class="_ _0"></span>等<span class="_ _0"></span>组<span class="_ _0"></span>件</div><div class="t m0 x4 h3 yb ff2 fs1 fc0 sc0 ls0 ws0">了<span class="_ _1"></span>解<span class="_ _0"></span>L<span class="_ _0"></span>i<span class="_ _0"></span>n<span class="_ _0"></span>u<span class="_ _0"></span>x<span class="_ _1"></span>的<span class="_ _0"></span>基<span class="_ _0"></span>本<span class="_ _0"></span>命<span class="_ _0"></span>令<span class="_ _0"></span>，<span class="_ _0"></span>了<span class="_ _0"></span>解<span class="_ _0"></span>容<span class="_ _0"></span>器<span class="_ _0"></span>化<span class="_ _0"></span>技<span class="_ _0"></span>术<span class="_ _1"></span>D<span class="_ _0"></span>o<span class="_ _0"></span>c<span class="_ _0"></span>k<span class="_ _1"></span>e<span class="_ _0"></span>r</div><div class="t m0 x1 h2 yc ff1 fs0 fc0 sc0 ls0 ws0">项<span class="_ _0"></span>目<span class="_ _0"></span>经<span class="_ _0"></span>历</div><div class="t m0 x1 h3 yd ff1 fs1 fc0 sc0 ls0 ws0">自<span class="_ _1"></span>媒<span class="_ _0"></span>体<span class="_ _0"></span>平<span class="_ _0"></span>台<span class="_ _2"> </span><span class="ff2">2<span class="_ _1"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>1<span class="_ _0"></span>年<span class="_ _0"></span>0<span class="_ _1"></span>1<span class="_ _0"></span>月<span class="_ _0"></span><span class="_ _0"></span>-<span class="_ _0"></span><span class="_ _1"></span>2<span class="_ _0"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>1<span class="_ _1"></span>年<span class="_ _0"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>月</span></div><div class="t m0 x1 h3 ye ff1 fs1 fc0 sc0 ls0 ws0">涉<span class="_ _1"></span>及<span class="_ _0"></span>技<span class="_ _0"></span>术<span class="_ _0"></span><span class="ff2">：<span class="_ _0"></span>S<span class="_ _0"></span>p<span class="_ _0"></span>r<span class="_ _1"></span>i<span class="_ _0"></span>n<span class="_ _0"></span>g<span class="_ _0"></span>B<span class="_ _0"></span>o<span class="_ _1"></span>o<span class="_ _0"></span>t<span class="_ _0"></span>、<span class="_ _0"></span>S<span class="_ _0"></span>p<span class="_ _1"></span>r<span class="_ _0"></span>i<span class="_ _0"></span>n<span class="_ _0"></span>g<span class="_ _1"></span>C<span class="_ _0"></span>l<span class="_ _0"></span>o<span class="_ _0"></span>u<span class="_ _1"></span>d<span class="_ _0"></span>、<span class="_ _0"></span>M<span class="_ _0"></span>o<span class="_ _0"></span>n<span class="_ _0"></span>g<span class="_ _1"></span>o<span class="_ _0"></span>D<span class="_ _0"></span>B<span class="_ _0"></span>、<span class="_ _0"></span>R<span class="_ _1"></span>e<span class="_ _1"></span>d<span class="_ _0"></span>i<span class="_ _0"></span>s<span class="_ _1"></span>、<span class="_ _0"></span>R<span class="_ _0"></span>a<span class="_ _0"></span>b<span class="_ _0"></span>b<span class="_ _1"></span>i<span class="_ _0"></span>t<span class="_ _0"></span>M<span class="_ _0"></span>Q<span class="_ _0"></span>、<span class="_ _0"></span>M<span class="_ _1"></span>y<span class="_ _0"></span>S<span class="_ _0"></span>Q<span class="_ _0"></span>L<span class="_ _0"></span>等</span></div><div class="t m0 x4 h3 yf ff2 fs1 fc0 sc0 ls0 ws0">按<span class="_ _1"></span>照<span class="_ _0"></span>业<span class="_ _0"></span>务<span class="_ _0"></span>拆<span class="_ _0"></span>分<span class="_ _0"></span>并<span class="_ _0"></span>且<span class="_ _0"></span>服<span class="_ _0"></span>务<span class="_ _0"></span>化<span class="_ _0"></span>，<span class="_ _0"></span>实<span class="_ _0"></span>现<span class="_ _0"></span>了<span class="_ _0"></span>用<span class="_ _0"></span>户<span class="_ _0"></span>服<span class="_ _1"></span>务<span class="_ _0"></span>，<span class="_ _0"></span>文<span class="_ _0"></span>件<span class="_ _0"></span>服<span class="_ _0"></span>务<span class="_ _0"></span>，<span class="_ _0"></span>文<span class="_ _0"></span>章<span class="_ _0"></span>服<span class="_ _0"></span>务<span class="_ _0"></span>等<span class="_ _0"></span>模<span class="_ _0"></span>块</div><div class="t m0 x4 h3 y10 ff2 fs1 fc0 sc0 ls0 ws0">使<span class="_ _1"></span>用<span class="_ _0"></span>R<span class="_ _0"></span>a<span class="_ _0"></span>b<span class="_ _0"></span>b<span class="_ _1"></span>i<span class="_ _0"></span>t<span class="_ _0"></span>M<span class="_ _0"></span>Q<span class="_ _0"></span>实<span class="_ _0"></span>现<span class="_ _0"></span>服<span class="_ _0"></span>务<span class="_ _1"></span>调<span class="_ _0"></span>用<span class="_ _0"></span>之<span class="_ _0"></span>间<span class="_ _0"></span>的<span class="_ _0"></span>解<span class="_ _0"></span>耦</div><div class="t m0 x4 h3 y11 ff2 fs1 fc0 sc0 ls0 ws0">使<span class="_ _1"></span>用<span class="_ _0"></span>P<span class="_ _1"></span>o<span class="_ _1"></span>s<span class="_ _0"></span>t<span class="_ _0"></span>M<span class="_ _0"></span>a<span class="_ _0"></span>n<span class="_ _1"></span>对<span class="_ _0"></span>各<span class="_ _0"></span>模<span class="_ _0"></span>块<span class="_ _0"></span>H<span class="_ _0"></span>T<span class="_ _3"></span>T<span class="_ _1"></span>P<span class="_ _0"></span>接<span class="_ _0"></span>口<span class="_ _0"></span>进<span class="_ _0"></span>行<span class="_ _0"></span>测<span class="_ _0"></span>试</div><div class="t m0 x1 h3 y12 ff1 fs1 fc0 sc0 ls0 ws0">新<span class="_ _1"></span>零<span class="_ _0"></span>售<span class="_ _0"></span>数<span class="_ _0"></span>据<span class="_ _0"></span>库<span class="_ _0"></span>实<span class="_ _0"></span>现<span class="_ _4"> </span><span class="ff2">2<span class="_ _1"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>1<span class="_ _0"></span>年<span class="_ _0"></span>0<span class="_ _1"></span>1<span class="_ _0"></span>月<span class="_ _0"></span><span class="_ _0"></span>-<span class="_ _0"></span><span class="_ _1"></span>2<span class="_ _0"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>1<span class="_ _1"></span>年<span class="_ _0"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>月</span></div><div class="t m0 x1 h3 y13 ff1 fs1 fc0 sc0 ls0 ws0">涉<span class="_ _1"></span>及<span class="_ _0"></span>技<span class="_ _0"></span>术<span class="_ _0"></span>：<span class="_ _0"></span><span class="ff2">M<span class="_ _0"></span>y<span class="_ _0"></span>S<span class="_ _0"></span>Q<span class="_ _0"></span>L<span class="_ _1"></span>、<span class="_ _0"></span>D<span class="_ _0"></span>o<span class="_ _0"></span>c<span class="_ _0"></span>k<span class="_ _1"></span>e<span class="_ _1"></span>r<span class="_ _0"></span>、<span class="_ _0"></span>P<span class="_ _1"></span>X<span class="_ _1"></span>C<span class="_ _0"></span>+<span class="_ _1"></span>R<span class="_ _1"></span>e<span class="_ _0"></span>p<span class="_ _0"></span>l<span class="_ _1"></span>i<span class="_ _0"></span>a<span class="_ _0"></span>c<span class="_ _0"></span>t<span class="_ _1"></span>i<span class="_ _0"></span>o<span class="_ _0"></span>n<span class="_ _0"></span>、<span class="_ _1"></span>M<span class="_ _0"></span>y<span class="_ _0"></span>C<span class="_ _0"></span>a<span class="_ _0"></span>t<span class="_ _1"></span>等</span></div><div class="t m0 x4 h3 y14 ff2 fs1 fc0 sc0 ls0 ws0">基<span class="_ _1"></span>于<span class="_ _0"></span>D<span class="_ _0"></span>o<span class="_ _0"></span>c<span class="_ _0"></span>k<span class="_ _1"></span>e<span class="_ _1"></span>r<span class="_ _0"></span>搭<span class="_ _0"></span>建<span class="_ _0"></span>P<span class="_ _1"></span>X<span class="_ _1"></span>C<span class="_ _0"></span>集<span class="_ _0"></span>群<span class="_ _0"></span>和<span class="_ _0"></span>Re<span class="_ _0"></span>p<span class="_ _0"></span>l<span class="_ _0"></span>i<span class="_ _1"></span>a<span class="_ _0"></span>c<span class="_ _0"></span>t<span class="_ _0"></span>i<span class="_ _1"></span>o<span class="_ _0"></span>n<span class="_ _0"></span>集<span class="_ _0"></span>群</div><div class="t m0 x4 h3 y15 ff2 fs1 fc0 sc0 ls0 ws0">使<span class="_ _1"></span>用<span class="_ _0"></span>M<span class="_ _0"></span>y<span class="_ _0"></span>C<span class="_ _0"></span>a<span class="_ _0"></span>t<span class="_ _1"></span>管<span class="_ _0"></span>理<span class="_ _0"></span>集<span class="_ _0"></span>群<span class="_ _0"></span>，<span class="_ _0"></span>为<span class="_ _0"></span>集<span class="_ _0"></span>群<span class="_ _0"></span>配<span class="_ _0"></span>置<span class="_ _0"></span>负<span class="_ _0"></span>载<span class="_ _0"></span>均<span class="_ _0"></span>衡<span class="_ _0"></span>和<span class="_ _1"></span>读<span class="_ _0"></span>写<span class="_ _0"></span>分<span class="_ _0"></span>离</div><div class="t m0 x4 h3 y16 ff2 fs1 fc0 sc0 ls0 ws0">使<span class="_ _1"></span>用<span class="_ _0"></span>中<span class="_ _0"></span>间<span class="_ _0"></span>件<span class="_ _0"></span>Z<span class="_ _0"></span>o<span class="_ _0"></span>o<span class="_ _0"></span>K<span class="_ _1"></span>e<span class="_ _0"></span>e<span class="_ _1"></span>p<span class="_ _0"></span>e<span class="_ _0"></span>r<span class="_ _0"></span>方<span class="_ _0"></span>式<span class="_ _0"></span>生<span class="_ _1"></span>成<span class="_ _0"></span>主<span class="_ _0"></span>键<span class="_ _0"></span>值</div><div class="t m0 x1 h2 y17 ff1 fs0 fc0 sc0 ls0 ws0">个<span class="_ _0"></span>人<span class="_ _0"></span>总<span class="_ _0"></span>结</div><div class="t m0 x4 h3 y18 ff2 fs1 fc0 sc0 ls0 ws0">技<span class="_ _1"></span>术<span class="_ _0"></span>视<span class="_ _0"></span>野<span class="_ _0"></span>开<span class="_ _0"></span>阔<span class="_ _0"></span>，<span class="_ _0"></span>学<span class="_ _0"></span>习<span class="_ _0"></span>能<span class="_ _0"></span>力<span class="_ _0"></span>好<span class="_ _0"></span>，<span class="_ _0"></span>喜<span class="_ _0"></span>欢<span class="_ _0"></span>钻<span class="_ _0"></span>研</div><div class="t m0 x4 h3 y19 ff2 fs1 fc0 sc0 ls0 ws0">乐<span class="_ _1"></span>观<span class="_ _0"></span>开<span class="_ _0"></span>朗<span class="_ _0"></span>，<span class="_ _0"></span>适<span class="_ _0"></span>应<span class="_ _0"></span>能<span class="_ _0"></span>力<span class="_ _0"></span>强<span class="_ _0"></span>，<span class="_ _0"></span>有<span class="_ _0"></span>强<span class="_ _0"></span>烈<span class="_ _0"></span>的<span class="_ _0"></span>求<span class="_ _0"></span>知<span class="_ _0"></span>欲</div><div class="t m0 x4 h3 y1a ff2 fs1 fc0 sc0 ls0 ws0">具<span class="_ _1"></span>备<span class="_ _0"></span>良<span class="_ _0"></span>好<span class="_ _0"></span>的<span class="_ _0"></span>沟<span class="_ _0"></span>通<span class="_ _0"></span>能<span class="_ _0"></span>力<span class="_ _0"></span>和<span class="_ _0"></span>团<span class="_ _0"></span>队<span class="_ _0"></span>合<span class="_ _0"></span>作<span class="_ _0"></span>意<span class="_ _0"></span>识<span class="_ _0"></span>，<span class="_ _0"></span>能<span class="_ _1"></span>快<span class="_ _0"></span>速<span class="_ _0"></span>融<span class="_ _0"></span>入<span class="_ _0"></span>团<span class="_ _0"></span>队</div><div class="t m0 x1 h4 y1b ff1 fs2 fc0 sc0 ls0 ws0">杨<span class="_ _0"></span>旻<span class="_ _0"></span>琛</div><div class="t m0 x1 h3 y1c ff2 fs1 fc0 sc0 ls0 ws0">电<span class="_ _1"></span>话<span class="_ _0"></span>:<span class="_ _0"></span><span class="_ _0"></span>1<span class="_ _0"></span>5<span class="_ _1"></span>1<span class="_ _0"></span>0<span class="_ _0"></span>7<span class="_ _0"></span>1<span class="_ _0"></span>6<span class="_ _1"></span>0<span class="_ _0"></span>2<span class="_ _0"></span>8<span class="_ _0"></span>7<span class="_ _1"></span>丨<span class="_ _0"></span>邮<span class="_ _0"></span>箱<span class="_ _0"></span>:<span class="_ _0"></span><span class="_ _0"></span>3<span class="_ _1"></span>3<span class="_ _0"></span>8<span class="_ _0"></span>7<span class="_ _0"></span>7<span class="_ _0"></span>1<span class="_ _1"></span>4<span class="_ _0"></span>7<span class="_ _0"></span>3<span class="_ _0"></span>3<span class="_ _0"></span>@<span class="_ _1"></span>q<span class="_ _0"></span>q<span class="_ _0"></span>.<span class="_ _0"></span>c<span class="_ _1"></span>o<span class="_ _0"></span>m</div><div class="t m0 x1 h3 y1d ff2 fs1 fc0 sc0 ls0 ws0">年<span class="_ _1"></span>龄<span class="_ _0"></span>:<span class="_ _0"></span><span class="_ _0"></span>2<span class="_ _0"></span>1<span class="_ _1"></span>岁</div><div class="t m0 x1 h3 y1e ff2 fs1 fc0 sc0 ls0 ws0">求<span class="_ _1"></span>职<span class="_ _0"></span>意<span class="_ _0"></span>向<span class="_ _0"></span>:<span class="_ _0"></span><span class="_ _0"></span>J<span class="_ _1"></span>a<span class="_ _0"></span>v<span class="_ _1"></span>a<span class="_ _1"></span>开<span class="_ _0"></span>发<span class="_ _0"></span>工<span class="_ _0"></span>程<span class="_ _0"></span>师</div></div></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+<img alt="" src="pdf2htmlEX-64x64.png"/>
+</div>
+</body>
+</html>
