@@ -1,5 +1,3 @@
-## 资源
-B站
-
-## 工具
+Git is a version control system.
+Git is free software.
 
